@@ -1,0 +1,74 @@
+/*
+ * Base
+ */
+
+
+.page-main img {
+    vertical-align: middle;
+}
+
+.page-main button {
+    outline: none;
+}
+
+
+#buttons2 {
+    background-color: #fff;
+    height: 340px;
+}
+
+#buttons2 .inner {
+    position: relative;
+    width: 976px;
+    margin: 0 auto;
+}
+
+#buttons2 button {
+    display: block;
+    position: absolute;
+    width: 224px;
+    height: 224px;
+    overflow: hidden;
+    padding: 0 0 35px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #01b169;
+    background-color: #fff;
+    border: none;
+    border-radius: 112px;
+}
+#buttons2 button:nth-child(1) {
+    left: 10px;
+}
+#buttons2 button:nth-child(2) {
+    left: 254px;
+}
+#buttons2 button:nth-child(3) {
+    left: 498px;
+}
+#buttons2 button:nth-child(4) {
+    left: 742px;
+}
+
+/*
+ * Helpers
+ */
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+/* #button2 */
+#buttons2 button img:first-child {
+    position: absolute;
+}
+#buttons2 button img:nth-child(2) {
+    opacity: 0;
+}
+

@@ -1,0 +1,216 @@
+<!doctype html>
+<html>
+ <head>
+    <title>크래프트김스</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/styles.css">
+	<!--<link type="text/css" rel="stylesheet" href="bootstrap.min.css" />-->
+	
+    
+	<style>
+	@font-face{
+	font-family:'myfont';
+	src:url('font/KoreanSNRO-R.woff');
+	} 
+	
+	*{margin:0; padding:0;
+	  text-decoration:none;}
+	
+	#top{background-color:#22191b; width:100%;  
+		 height:auto; z-index:10;}
+
+	#logo{text-align:center; padding-top:10px;
+		  background-color:#22191b;}
+	
+	
+	#main_jpg{border-top:2px solid rgba(255,222,23,0.3);}
+	
+	
+	#contents{width:100%; height:250px; background:url(img/index_bottom.jpg);}
+	#content{width:49%; height:250px; margin:0 auto;}
+	.banner_wraper { height:250px; width:950px; position: absolute; overflow: hidden;}
+	.banner_wraper img { height: 250px; position: absolute;  }
+
+
+	footer{ width:100%; height:80px; background:#ccc; color:#000; clear:both; text-align:center;
+		   font-size:0.8em; padding-top:20px; font-family:"맑은 고딕"; }
+		   
+	</style>
+	
+	<script src="./js/vendor/modernizr.custom.min.js"></script>
+	<script src="./js/vendor/jquery-1.10.2.min.js"></script>
+	<script src="./js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+	
+	<!--메인 슬라이드-->
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
+	<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<!--<script src="bootstrap.min.js"></script>-->
+	
+	<script type="text/javascript">
+
+				//client rolling banner
+	    window.onload = function() {
+			var bannerLeft=0;
+			var first=1;
+			var last;
+			var imgCnt=0;
+			var $img = $(".banner_wraper img");
+			var $first;
+			var $last;
+
+			$img.each(function(){   // 5px 간격으로 배너 처음 위치 시킴
+				$(this).css("left",bannerLeft);
+				bannerLeft += $(this).width()+0;
+				$(this).attr("id", "banner"+(++imgCnt));  // img에 id 속성 추가
+			});
+
+				
+			if( imgCnt > 3){                //배너 9개 이상이면 이동시킴
+
+
+				last = imgCnt;
+
+				setInterval(function() {
+					$img.each(function(){
+						$(this).css("left", $(this).position().left-1); // 1px씩 왼쪽으로 이동
+					});
+					$first = $("#banner"+first);
+					$last = $("#banner"+last);
+					if($first.position().left < -400) {    // 제일 앞에 배너 제일 뒤로 옮김
+						$first.css("left", $last.position().left + $last.width()+0 );
+						first++;
+						last++;
+						if(last > imgCnt) { last=1; }   
+						if(first > imgCnt) { first=1; }
+					}
+				}, 50);   //여기 값을 조정하면 속도를 조정할 수 있다.(위에 1px 이동하는 부분도 조정하면 
+
+					//깔끔하게 변경가능하다           
+
+			}
+
+	};
+
+	</script>
+	
+ </head>
+ 
+ <body  oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+ <header id="top">
+	<div id="logo"><a href="index.html"><img src="img/logo.png"></a></div>
+	
+	<nav id='cssmenu'>
+		<ul>
+	   
+		<li class='active has-sub'><a href='sub1.html'><span>KIMS STORY</span></a><!--1번째 메뉴 -->
+		  <ul>
+			 <li class='has-sub'><a href='sub1.html'><span>맥주공방소개</span></a></li>
+			 <li class='has-sub'><a href='sub1-1.html'><span>Store Concept</span></a></li>
+		  </ul>
+		</li>
+	   
+		<li class='active has-sub'><a href='sub2.html'><span>MENU</span></a><!--2번째 메뉴 -->
+		  <ul>
+			 <li class='has-sub'><a href='sub2.html'><span>BEER</span></a></li>
+			 <li class='has-sub'><a href='sub2-1.html'><span>FOOD</span></a></li>
+		  </ul>
+		</li>
+	   
+		<li class='active has-sub'><a href='sub3.html'><span>PRODUCTION</span></a><!--4번째 메뉴 -->
+		  <ul>
+			 <li class='has-sub'><a href='sub3.html'><span>맥주재료정보</span></a></li>
+			 <li class='has-sub'><a href='sub3-1.html'><span>맥주만들기</span></a></li>
+		  </ul>
+		</li>
+	   
+		<li class='active has-sub' class='#'><a href='sub4.html'><span>SOCIAL</span></a><!--4번째 메뉴 -->
+		  <ul>
+			 <li class='has-sub'><a href='sub4.html'><span>SNS/MIDIA</span></a></li>
+		  </ul>
+		</li>
+		<li class='active has-sub' class='last'><a href='sub5.html'><span>CONTACT</span></a><!--5번째 메뉴 -->
+		  <ul>
+			 <li class='has-sub'><a href='sub5.html'><span>오시는길/연락처</span></a></li>
+		  </ul>
+		</li>
+	   
+		</ul>
+	</nav><!--메뉴끝-->
+ </header>
+ 
+ <!--메인 슬라이드-->
+ <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+	
+	<!--페이지-->
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+		<li data-target="#myCarousel" data-slide-to="3"></li>
+	</ol>
+	<!--페이지-->
+
+	<div class="carousel-inner">
+		<!--슬라이드1-->
+		<div class="item active"> 
+			<img src="img/abc.jpg" style="width:100%" alt="First slide">
+			<div class="container">
+			</div>
+		</div>
+		<!--슬라이드1-->
+
+		<!--슬라이드2-->
+		<div class="item"> 
+			<img src="img/abc3.jpg" style="width:100%" data-src="" alt="Second slide">
+			<div class="container">
+			</div>
+		</div>
+		<!--슬라이드2-->
+		
+		<!--슬라이드3-->
+		<div class="item"> 
+			<img src="img/abc4.jpg" style="width:100%" data-src="" alt="Third slide">
+			<div class="container">
+			</div>
+		</div>
+		<!--슬라이드3-->
+		
+		<!--슬라이드4-->
+		<div class="item"> 
+			<img src="img/abc5.jpg" style="width:100%" data-src="" alt="Fored slide">
+			<div class="container">
+			</div>
+		</div>
+	</div>
+	
+	<!--이전, 다음 버튼-->
+	<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> 
+	<a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> 
+</div>
+
+ <div id="main_jpg"><img src="img/main.jpg" style="width:100%;"></div>
+
+  <div id="contents">
+	<div id="content">
+	<div class="banner_wraper">
+		<img src="img/v1.jpg">
+		<img src="img/v2.jpg">
+		<img src="img/v3.jpg">
+		<img src="img/v4.jpg">
+	</div>
+	</div>
+  </div>
+ 
+ 
+ <footer>
+	<p>Copyright © 2013 by CRAFT HANS Ltd.  회사명:(주)크래프트김스 / 사업자등록번호: 272-97-00228 / 대표자:김인영<br>
+
+	TEL: 1661-0975 / 서울 서초구 서초대로77길 45, 실버타운 601호 / E-mail: inyoung9235@daum.net<br>
+
+​	*본 사이트는 Internet Explorer 10 이상으로 보기를 권장합니다.</p>
+ </footer>
+ </body> 
+</html>

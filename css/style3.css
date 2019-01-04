@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+*{margin:0;padding:0;}
+li{list-style:none;}		
+img{border:0; vertical-align:center;}		
+#wrap{width:1200px; position:relative; margin:0 auto;}
+#wrap h1{font-size:16px; margin:0 auto; padding:0 100px 0 365px; 
+line-height:3.2em; font-family:"myfont1"}
+#wrap h1 span{font-size:11px; font-family:"myfont2"; float:right;}
+#wrap #banner{padding-top:60px;}
+#wrap #banner .vis_frame{width:1200px; height:580px; overflow:hidden; position:relative;}
+#wrap #banner .vis_frame ul{position:absolute; left:0; top:0; width:800px;}
+#wrap #banner .vis_frame ul li{width:800px; float:left; padding:0;}
+#wrap #b_control{position:absolute;right:100px; top:50px;}
+#wrap #b_bt a.right{position:absolute;left:80px;top:50%;}
+#wrap #b_bt a.left{position:absolute;right:80px;top:50%;}

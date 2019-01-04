@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+ <head>
+    <title>크래프트김스</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+    <style type="text/css">
+	@font-face{
+	font-family:'myfont';
+	src:url('font/KoreanSNRO-R.woff');
+	}
+	@font-face{
+	font-family:'myfont1';
+	src:url('font/KoreanYNSJG2-R.woff');
+	}	
+	
+	*{margin:0; padding:0;
+	  text-decoration:none;}
+	
+	#top{background-color:#22191b; width:100%;  
+		 height:65px; z-index:10; position:fixed; border-bottom:1px solid #ffdd17;}
+
+	#logo{text-align:center; padding-top:10px; padding-left:10px;
+		  background-color:#22191b; float:left;}
+	
+	/*이미지 시작*/
+	#img{width:100%;}
+	
+	#container{width:100%; }
+	
+	#content1{width:100%; height:700px; background:url(img/back2.png) no-repeat;
+			  margin-top:-2px;}
+	#content1 img{margin-left:100px; width:90%;}
+	
+	#content2{height:1150px; width:1500px; margin:0 auto; padding-top:130px; padding-left:240px; }
+	
+	
+	footer{background-color:#ccc; color:#000;}
+	footer p{text-align:center; line-height:1.5em;
+		   font-size:0.7em; font-family:"맑은 고딕"; padding:20px 0;}
+	
+	</style>
+	
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	<link rel="stylesheet" href="./css/styles1.css">
+	<link rel="stylesheet" href="./css/style1.css" />
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+	
+	<script src="./js/vendor/modernizr.custom.min.js"></script>
+	<script src="./js/vendor/jquery-1.10.2.min.js"></script>
+	<script src="./js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+	
+	
+	<!-- jQuery Framework 참조하기 -->
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<!-- lightbox Plugin -->
+	<script type="text/javascript" src="js/lightbox-2.6.min.js"></script>
+	
+ </head>
+ 
+ <body  oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+<header id="top">
+	<div id="logo"><a href="index.html"><img src="img/logo.png"></a></div>
+	
+	<nav id='cssmenu'>
+	  <ul>
+	   
+		<li class='active has-sub'><a href='sub1.html'><span>KIMS STORY</span></a><!--1번째 메뉴 -->
+		  <ul>
+			 <li class='has-sub'><a href='sub1.html'><span>맥주공방소개</span></a></li>
+			 <li class='has-sub'><a href='sub1-1.html'><span>Store Concept</span></a></li>
+		  </ul>
+		</li>
+	   
+		<li class='active has-sub'><a href='sub2.html'><span>MENU</span></a><!--2번째 메뉴 -->
+		  <ul>
+			 <li class='has-sub'><a href='sub2.html'><span>BEER</span></a></li>
+			 <li class='has-sub'><a href='sub2-1.html'><span>FOOD</span></a></li>
+		  </ul>
+		</li>
+	   
+		<li class='active has-sub'><a href='sub3.html'><span>PRODUCTION</span></a><!--4번째 메뉴 -->
+		  <ul>
+			 <li class='has-sub'><a href='sub3.html'><span>맥주재료정보</span></a></li>
+			 <li class='has-sub'><a href='sub3-1.html'><span>맥주만들기</span></a></li>
+		  </ul>
+		</li>
+	   
+		<li class='active has-sub'><a href='sub4.html'><span>SOCIAL</span></a><!--4번째 메뉴 -->
+		  <ul>
+			 <li class='has-sub'><a href='sub4.html'><span>SNS/MIDIA</span></a></li>
+		  </ul>
+		</li>
+		<li class='active has-sub' class='last'><a href='sub5.html'><span>CONTACT</span></a><!--5번째 메뉴 -->
+		  <ul>
+			 <li class='has-sub'><a href='sub5.html'><span>오시는길/연락처</span></a></li>
+		  </ul>
+		</li>
+	   
+	  </ul>
+	</nav><!--메뉴끝-->
+ </header>
+ 
+ <div id="img"><img src="img/sub2-2.jpg" style="width:100%; margin-top:60px;"></div>
+ 
+ <section id="container">
+	<div id="content1">
+		<img src="img/sub2_beer2.png">
+	</div>
+	<div class="example" id="content2">
+		<ul class="gallery">
+			<!------#1-->
+			<li><figure class="snip1382">
+				<img src="img/food/food1_thumb.jpg"/>
+			<figcaption>
+				<h2>★김스 크리스피 치킨★</h2>
+				<p>크래프트김스만의 자체 레시피로 만든 매콤하고 바삭한 치킨</p>
+			<div class="icons">
+				<a href="img/food/food1.jpg" data-lightbox="roadtrip">
+				<i class="fa fa-search-plus" style="font-size:24px"></i></a>
+			</div>
+			</figcaption>
+			</figure></li>
+			<!------#2-->
+			<li><figure class="snip1382">
+				<img src="img/food/food2_thumb.jpg"/>
+			<figcaption>
+				<h2>★감바스 알 아히요★</h2>
+				<p>새우와 마늘 버섯을 오일에 구운 스페인식 요리에 오븐에 구운 또띠아를 곁들여 먹는 요리</p>
+			<div class="icons">
+				<a href="img/food/food2.jpg" data-lightbox="roadtrip">
+				<i class="fa fa-search-plus" style="font-size:24px"></i></a>
+			</div>
+			</figcaption>
+			</figure></li>
+			<!------#3-->
+			<li><figure class="snip1382">
+				<img src="img/food/food3_thumb.jpg"/>
+			<figcaption>
+				<h2>★김스 수제 소시지★</h2>
+				<p>김스만의 고유 레시피로 만든 부드러운 식감과 육즙이 살아있는 건강한 수제소시지 바베큐</p>
+			<div class="icons">
+				<a href="img/food/food3.jpg" data-lightbox="roadtrip">
+				<i class="fa fa-search-plus" style="font-size:24px"></i></a>
+			</div>
+			</figcaption>
+			</figure></li>
+			<!------#4-->
+			<li><figure class="snip1382">
+				<img src="img/food/food4_thumb.jpg"/>
+			<figcaption>
+				<h2>★비프 엔칠라다 딥★</h2>
+				<p>매콤하고 깔끔한 소스에 볶은 소고기와 그 위에 듬뿍 올려진 치즈를 바삭하게 튀근 나쵸로 떠서 먹는 자극적인 요리</p>
+			<div class="icons">
+				<a href="img/food/food4.jpg" data-lightbox="roadtrip">
+				<i class="fa fa-search-plus" style="font-size:24px"></i></a>
+			</div>
+			</figcaption>
+			</figure></li>
+			<!------#5-->
+			<li><figure class="snip1382">
+				<img src="img/food/food5_thumb.jpg"/>
+			<figcaption>
+				<h2>★콥 딥★</h2>
+				<p>크림치즈 소스위에 올려진 다양한 토핑을 바삭하게 튀겨낸 나쵸로 떠서 상큼하게 즐길 수 있는 가벼운 요리</p>
+			<div class="icons">
+				<a href="img/food/food5.jpg" data-lightbox="roadtrip">
+				<i class="fa fa-search-plus" style="font-size:24px"></i></a>
+			</div>
+			</figcaption>
+			</figure></li>
+			<!------#6-->
+			<li><figure class="snip1382">
+				<img src="img/food/food6_thumb.jpg"/>
+			<figcaption>
+				<h2>★불고기 퀘사디아★</h2>
+				<p>밀 또띠아 사이에 매콤한 토마토 소스와 직접 양념해 그릴에 구운 불고기, 카라멜 어니언, 치즈 등을 넣고 오븐에서 구워내는 멕시칸 요리</p>
+			<div class="icons">
+				<a href="img/food/food6.jpg" data-lightbox="roadtrip">
+				<i class="fa fa-search-plus" style="font-size:24px"></i></a>
+			</div>
+			</figcaption>
+			</figure></li>
+			<!------#7-->
+			<li><figure class="snip1382">
+				<img src="img/food/food7_thumb.jpg"/>
+			<figcaption>
+				<h2>★크림 치킨 스테이크★</h2>
+				<p>튀긴 닭다리살과 리가토니, 크림소스와 곁들어진 치킨 스테이크</p>
+			<div class="icons">
+				<a href="img/food/food7.jpg" data-lightbox="roadtrip">
+				<i class="fa fa-search-plus" style="font-size:24px"></i></a>
+			</div>
+			</figcaption>
+			</figure></li>
+			<!------#8-->
+			<li><figure class="snip1382">
+				<img src="img/food/food8_thumb.jpg"/>
+			<figcaption>
+				<h2>★맥 앤 치즈볼★</h2>
+				<p>동그란 튀김볼 안에 마카로니와 치즈가 듬뿍 들어있는 맥앤 치즈볼과 두툼한 감자튀김</p>
+			<div class="icons">
+				<a href="img/food/food8.jpg" data-lightbox="roadtrip">
+				<i class="fa fa-search-plus" style="font-size:24px"></i></a>
+			</div>
+			</figcaption>
+			</figure></li>
+			<!------#9-->
+			<li><figure class="snip1382">
+				<img src="img/food/food9_thumb.jpg"/>
+			<figcaption>
+				<h2>★보스턴 부트 프렌치 프라이즈★</h2>
+				<p>매콤한 케이준 양념의 감자튀김 위에 볶음김치, 돼지고기, 할라피뇨 등을 더한 프렌치 프라이즈</p>
+			<div class="icons">
+				<a href="img/food/food9.jpg" data-lightbox="roadtrip">
+				<i class="fa fa-search-plus" style="font-size:24px"></i></a>
+			</div>
+			</figcaption>
+			</figure></li>
+			<!------#10-->
+			<li><figure class="snip1382">
+				<img src="img/food/food10_thumb.jpg"/>
+			<figcaption>
+				<h2>★치즈피자★</h2>
+				<p>도우에 모짜렐라 치즈와 체다치즈, 미트소스를 잔뜩 토핑하여 오븐에 구운 피자</p>
+			<div class="icons">
+				<a href="img/food/food10.jpg" data-lightbox="roadtrip">
+				<i class="fa fa-search-plus" style="font-size:24px"></i></a>
+			</div>
+			</figcaption>
+			</figure></li>
+			<!------#11-->
+			<li><figure class="snip1382">
+				<img src="img/food/food11_thumb.jpg"/>
+			<figcaption>
+				<h2>★BBQ 15mm 베이컨</h2>
+				<p>돼지 삼겹살을 허브와 맥주로 마리네이드하여 낮은온도에서 뭉근하게 훈연한 부드러운 식감의 베이컨 스테이크</p>
+			<div class="icons">
+				<a href="img/food/food11.jpg" data-lightbox="roadtrip">
+				<i class="fa fa-search-plus" style="font-size:24px"></i></a>
+			</div>
+			</figcaption>
+			</figure></li>
+			<!------#12-->
+			<li><figure class="snip1382">
+				<img src="img/food/food12_thumb.jpg"/>
+			<figcaption>
+				<h2>★한스버거★</h2>
+				<p>직접 만든 두툼한 쇠고기 패티와 그릴에 구운 양파, 토마토, 치즈를 곁들인 수제버거, 감자튀김</p>
+			<div class="icons">
+				<a href="img/food/food12.jpg" data-lightbox="roadtrip">
+				<i class="fa fa-search-plus" style="font-size:24px"></i></a>
+			</div>
+			</figcaption>
+			</figure></li>
+		</ul>
+	</div>
+ </section>
+ 
+ 
+ <footer>
+	<p>Copyright © 2013 by CRAFT HANS Ltd.  회사명:(주)크래프트김스 / 사업자등록번호: 272-97-00228 / 대표자:김인영<br>
+
+	TEL: 1661-0975 / 서울 서초구 서초대로77길 45, 실버타운 601호 / E-mail: inyoung9235@daum.net<br>
+
+​	*본 사이트는 Internet Explorer 10 이상으로 보기를 권장합니다.</p>
+ </footer>
+
+ </body> 
+</html>

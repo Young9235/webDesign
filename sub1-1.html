@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+ <head>
+    <title>크래프트김스</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="./css/styles1.css">
+	
+	<script src="./js/vendor/modernizr.custom.min.js"></script>
+	<script src="./js/vendor/jquery-1.10.2.min.js"></script>
+	<script src="./js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="./js/sub1-1.js"></script>
+	
+    <style>
+	@font-face{
+	font-family:'myfont';
+	src:url('font/KoreanSNRO-R.woff');
+	} 
+	
+	*{margin:0; padding:0;
+	  text-decoration:none;}
+	
+	#top{background-color:#22191b; width:100%;  
+		 height:65px; z-index:10; position:fixed; border-bottom:1px solid #ffdd17;}
+
+	#logo{text-align:center; padding-top:10px; padding-left:10px;
+		  background-color:#22191b; float:left;}
+	
+	/*이미지 시작*/
+	#img{width:100%;}
+	
+
+	#container{width:100%; height:auto; 
+			   padding-top:70px; margin-top:-5px; 
+			   background-image:url(back4.png);}
+	
+	#content1{width:78%; height:400px; margin:0 auto; margin-bottom:70px; 
+			   text-align:center; margin-top:-20px;}
+	#content1 .kkk:hover{transform:rotate(20deg);}
+	
+	/*컨텐트2*/
+	#content2{width:100%; height:auto;
+			   margin:0 auto; text-align:center;
+			   padding:50px 0 50px 0; }
+	#content2 li { float:left; list-style:none; margin-left:7px; margin-top:10px; 
+				   overflow:hidden; width:123px; height:60px;}
+	#content2 li {display:block; width:123px;}
+	#content2 li img {display:block;}
+	#content2 li img:hover{opacity:0.5;}
+	#content2 #cc{border:5px dotted #fcc802; border-radius:10px; 
+				  width:800px; height:670px; margin:0 auto; padding-top:10px; background:#22191b;}
+	#nav {width:780px; height:140px; margin:0 auto;}
+	#image { width:780px; height:500px; margin:10px auto 0px auto; }
+	#image.a { background:url(images/store1.jpg); transition:all 1s; }
+	#image.b { background:url(images/store2.jpg); transition:all 1s;}
+	#image.c { background:url(images/store3.jpg); transition:all 1s;}
+	#image.d { background:url(images/store4.jpg); transition:all 1s;}
+	#image.e { background:url(images/store5.jpg); transition:all 1s;}
+	#image.f { background:url(images/store6.jpg); transition:all 1s;}
+	#image.g { background:url(images/store7.jpg); transition:all 1s;}
+	#image.h { background:url(images/store8.jpg); transition:all 1s;}
+	#image.i { background:url(images/store9.jpg); transition:all 1s;}
+	#image.j { background:url(images/store10.jpg); transition:all 1s;}
+	#image.k { background:url(images/store11.jpg); transition:all 1s;}
+	#image.l { background:url(images/store12.jpg); transition:all 1s;}
+	#springBtn, #summerBtn, #fallBtn, #winterBtn{ cursor:pointer;}
+	
+	
+	footer{text-align:center; margin-top:80px; margin-bottom:20px;
+		   font-size:0.7em; line-height:1.5em}
+	</style>
+ </head>
+ 
+ <body  oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+ <header id="top">
+	<div id="logo"><a href="index.html"><img src="img/logo.png"></a></div>
+	
+	<nav id='cssmenu'>
+	  <ul>
+	   
+		<li class='active has-sub'><a href='sub1.html'><span>KIMS STORY</span></a><!--1번째 메뉴 -->
+		  <ul>
+			 <li class='has-sub'><a href='sub1.html'><span>맥주공방소개</span></a></li>
+			 <li class='has-sub'><a href='sub1-1.html'><span>Store Concept</span></a></li>
+		  </ul>
+		</li>
+	   
+		<li class='active has-sub'><a href='sub2.html'><span>MENU</span></a><!--2번째 메뉴 -->
+		  <ul>
+			 <li class='has-sub'><a href='sub2.html'><span>BEER</span></a></li>
+			 <li class='has-sub'><a href='sub2-1.html'><span>FOOD</span></a></li>
+		  </ul>
+		</li>
+	   
+		<li class='active has-sub'><a href='sub3.html'><span>PRODUCTION</span></a><!--3번째 메뉴 -->
+		  <ul>
+			 <li class='has-sub'><a href='sub3.html'><span>맥주재료정보</span></a></li>
+			 <li class='has-sub'><a href='sub3-1.html'><span>맥주만들기</span></a></li>
+		  </ul>
+		</li>
+	   
+		<li class='active has-sub' class='#'><a href='sub4.html'><span>SOCIAL</span></a><!--4번째 메뉴 -->
+		  <ul>
+			 <li class='has-sub'><a href='sub4.html'><span>SNS/MIDIA</span></a></li>
+		  </ul>
+		</li>
+		<li class='active has-sub' class='last'><a href='sub5.html'><span>CONTACT</span></a><!--5번째 메뉴 -->
+		  <ul>
+			 <li class='has-sub'><a href='sub5.html'><span>오시는길/연락처</span></a></li>
+		  </ul>
+		</li>
+	   
+	  </ul>
+	</nav><!--메뉴끝-->
+ </header>
+ 
+ <div id="img"><img src="img/sub1-1.jpg" style="width:100%; margin-top:60px;"></div>
+ 
+ 
+ <section id="container">
+	<div id="content1">
+		<img src="img/kkk.png" class="kkk">
+		<img src="img/sub1-1.png">
+	</div>
+ 
+	<div id="content2"><!--컨텐트2 이미지 시작-->
+	<img src="img/sub1-3.png" style="margin-bottom:10px;">
+		<div id="cc">
+		<div id="image" class="a"></div>
+		<div id="nav">
+			<ul>
+				<li id="a"><img src="images/store1_thumb.jpg" /></li>
+				<li id="b"><img src="images/store2_thumb.jpg" /></li>
+				<li id="c"><img src="images/store3_thumb.jpg" /></li>
+				<li id="d"><img src="images/store4_thumb.jpg" /></li>
+				<li id="e"><img src="images/store5_thumb.jpg" /></li>
+				<li id="f"><img src="images/store6_thumb.jpg" /></li>
+				<li id="g"><img src="images/store7_thumb.jpg" /></li>
+				<li id="h"><img src="images/store8_thumb.jpg" /></li>
+				<li id="i"><img src="images/store9_thumb.jpg" /></li>
+				<li id="j"><img src="images/store10_thumb.jpg" /></li>
+				<li id="k"><img src="images/store11_thumb.jpg" /></li>
+				<li id="l"><img src="images/store12_thumb.jpg" /></li>
+			</ul>
+		</div>
+		</div>
+	</div>
+	 <img src="img/illust03.png" style="float:right;">
+	 <div id="bottom"><img src="img/sub1_bottom1.jpg" width="100%"></div>
+ </section>
+  
+  <footer>
+	Copyright © 2013 by CRAFT HANS Ltd.  회사명:(주)크래프트김스 / 사업자등록번호: 272-97-00228 / 대표자:김인영<br>
+
+	TEL: 1661-0975 / 서울 서초구 서초대로77길 45, 실버타운 601호 / E-mail: inyoung9235@daum.net<br>
+
+​	*본 사이트는 Internet Explorer 10 이상으로 보기를 권장합니다.
+   </footer>
+
+ </body> 
+</html>

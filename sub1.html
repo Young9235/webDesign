@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+ <head>
+    <title>크래프트김스</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/styles1.css">
+	
+	<script src="./js/vendor/modernizr.custom.min.js"></script>
+	<script src="./js/vendor/jquery-1.10.2.min.js"></script>
+	<script src="./js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="./js/main.js"></script>
+	
+    <style>
+	@font-face{
+	font-family:'myfont';
+	src:url('font/KoreanSNRO-R.woff');
+	}
+	@font-face{
+	font-family:'myfont1';
+	src:url('font/KoreanTITGD1-R.woff');
+	}
+	
+	*{margin:0; padding:0;
+	  text-decoration:none;}
+	
+	#top{background-color:#22191b; width:100%;  
+		 height:65px; z-index:10; position:fixed; border-bottom:1px solid #ffdd17;}
+
+	#logo{text-align:center; padding-top:10px; padding-left:10px;
+		  background-color:#22191b; float:left;}
+	
+	<!--이미지 시작-->
+	#img{width:100%;}
+	
+	#container1{height:800px; background-image:url(back3.png); margin-top:-5px;}
+	#content1{width:1250px; margin:0 auto; padding-top:50px;}
+	#id1{float:left; margin-top:40px; margin-left:10px;}
+	#id2{padding-left:25px;}
+	
+	.aa1{margin-top:21px;}
+	.aa1:hover{transform:scale(1.1,1.1) rotate(5deg);}
+	.aa2:hover{transform:scale(1.1,1.1) rotate(-5deg);}
+	.aa2{margin-left:-10px;}
+	.aa{margin-left:15px; transition:0.5s;}
+	.aa:hover{opacity:0.8;}
+	
+	#container2{clear:both; background-color:#22191b; height:250px;}
+	#content2{width:1100px; color:#d2d2d2; margin:0 auto; padding-top:30px;
+			  text-align:center; font:17px "myfont1"}
+	#content2 h3{font-style:italic; line-height:2.2em;}
+	#content2 p{font-size:0.9em; line-height:1.8em;}
+	#content3{width:100%;}
+	
+	footer{text-align:center; margin-top:80px; margin-bottom:20px;
+		   font-size:0.7em; line-height:1.5em;}
+	</style>
+ </head>
+ 
+ <body  oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+ <header id="top">
+	<div id="logo"><a href="index.html"><img src="img/logo.png"></a></div>
+	
+	<nav id='cssmenu'>
+	  <ul>
+	   
+		<li class='active has-sub'><a href='sub1.html'><span>KIMS STORY</span></a><!--1번째 메뉴 -->
+		  <ul>
+			 <li class='has-sub'><a href='sub1.html'><span>맥주공방소개</span></a></li>
+			 <li class='has-sub'><a href='sub1-1.html'><span>Store Concept</span></a></li>
+		  </ul>
+		</li>
+	   
+		<li class='active has-sub'><a href='sub2.html'><span>MENU</span></a><!--2번째 메뉴 -->
+		  <ul>
+			 <li class='has-sub'><a href='sub2.html'><span>BEER</span></a></li>
+			 <li class='has-sub'><a href='sub2-1.html'><span>FOOD</span></a></li>
+		  </ul>
+		</li>
+	   
+		<li class='active has-sub'><a href='sub3.html'><span>PRODUCTION</span></a><!--3번째 메뉴 -->
+		  <ul>
+			 <li class='has-sub'><a href='sub3.html'><span>맥주재료정보</span></a></li>
+			 <li class='has-sub'><a href='sub3-1.html'><span>맥주만들기</span></a></li>
+		  </ul>
+		</li>
+	   
+		<li class='active has-sub' class='#'><a href='sub4.html'><span>SOCIAL</span></a><!--4번째 메뉴 -->
+		  <ul>
+			 <li class='has-sub'><a href='sub4.html'><span>SNS/MIDIA</span></a></li>
+		  </ul>
+		</li>
+		<li class='active has-sub' class='last'><a href='sub5.html'><span>CONTACT</span></a><!--5번째 메뉴 -->
+		  <ul>
+			 <li class='has-sub'><a href='sub5.html'><span>오시는길/연락처</span></a></li>
+		  </ul>
+		</li>
+	   
+	  </ul>
+	</nav><!--메뉴끝-->
+ </header>
+ 
+ <div id="img"><img src="img/sub1.jpg" style="width:100%; margin-top:50px;"></div>
+ 
+ <!--컨텐트 시작-->
+ <section id="container1">
+	<div id="content1">
+	  <div id="id1">
+	  <iframe width="500" height="300" src="https://www.youtube.com/embed/U8qhney1kwc" frameborder="0" allowfullscreen></iframe><br>
+	  <img src="img/sub1.png" width="450">
+	  </div>
+	  <table id="id2">
+		<tr><td rowspan="2" style="padding-top:20px"><img src="img/aa.png" class="aa"></td>
+			<td><img src="img/aa1.png" class="aa1"></td>
+		</tr>
+		<tr><td><img src="img/aa2.png" class="aa2"></td></tr>
+	  </table>
+	</div>
+ </section>
+ 
+ <section id="container2">
+	<div id="content2">
+		<h2>당신의 첫번째 수제맥주</h2>
+		<h3>YOUR FIRST CRAFTBEER</h3>
+		<p>
+		크래프트김스는 맛있는 수제맥주를 한국에서도 부담없는 가격에 즐길 수 있는 문화를 전파하고자 하는 신념으로
+		이태원 해밀턴호텔 뒷골목에서 시작된 수제맥주 전문점입니다.<br>
+		세계 각국의 소형 양조장에서 제조하는 고품질의 바틀맥주만 선별하여 판매하는 바틀샵의 원조로 자리잡았던 김스는 2013년 12월,<br>
+		대한민국에서 가장 물이 맑은 가평의 한 Micro Brewery 에서 김스만의 레시피로 생산하는 맥주를 더해 '크래프트김스' 로 재탄생하게되었습니다. <br>
+		초심의 신념을 경영철학으로 삼고 수제맥주가 전국민의 사랑을 받는 그 날까지, 크래프트김스는
+		멈추지 않고 달려나가겠습니다.
+		</p>
+	</div>
+ </section>
+ 
+ <div id="content3"><img src="img/sub1_img.jpg" width="100%"></div>
+ 
+ <footer>
+	Copyright © 2013 by CRAFT HANS Ltd.  회사명:(주)크래프트김스 / 사업자등록번호: 272-97-00228 / 대표자:김인영<br>
+
+	TEL: 1661-0975 / 서울 서초구 서초대로77길 45, 실버타운 601호 / E-mail: inyoung9235@daum.net<br>
+
+​	*본 사이트는 Internet Explorer 10 이상으로 보기를 권장합니다.
+ </footer>
+
+ </body> 
+</html>

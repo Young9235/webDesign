@@ -1,0 +1,20 @@
+* {margin:0; padding:0}
+
+p {line-height:1.4; margin-bottom:12px}
+#wrapper {width:40%; margin:100px auto; padding-left:100px;}
+
+.sliderbutton {float:left; width:32px; padding-top:184px}
+.sliderbutton img {cursor:pointer}
+#slideshow {float:left; width:600px; height:400px; border:2px solid #22191b; 
+background:#fff}
+#slides {position:relative; width:600px; height:400px; list-style:none; overflow:auto}
+#slides li {width:600px; height:400px}
+
+.pagination {width:80%; float:left; list-style:none; height:25px; margin:8px 0 0 40px; 
+font-family:'나눔고딕'; font-size:0.8em; font-weight:bold;}
+.pagination li {float:left; cursor:pointer; padding:5px 8px; border:1px dashed #22191b; margin:5px 4px 0 0; text-align:center; color:#22191b; }
+.pagination li:hover {background:#ffdd17; border:1px solid #22191b; color:#000}
+li.current {border:1px solid #22191b; background:#ffdd17; color:#22191b}
+
+li#content {width:620px; height:445px; padding:15px 18px 15px 18px; background:#ffdd17; color:#22191b;}
+#content h1 {font:22px Georgia,Verdana; margin-bottom:15px; color:#fff}

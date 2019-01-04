@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>http://www.blueb.co.kr</title>
+		<meta charset="UTF-8">
+		<meta name=description content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link href="assets/css/main.css" rel="stylesheet" media="screen"/>
+	</head>
+	<body>
+
+        <div class="wrap wrap-index">
+
+
+
+            <!-- slider-->
+            <div class="slider">
+                <div class="jquery-reslider">
+                    <div class="slider-block" data-url="http://www.blueb.co.kr/SRC2/_image/02.jpg"></div>
+                    <div class="slider-block" data-url="http://www.blueb.co.kr/SRC2/_image/03.jpg"></div>
+                    <div class="slider-block" data-url="http://www.blueb.co.kr/SRC2/_image/04.jpg"></div>
+                    <div class="slider-block" data-url="http://www.blueb.co.kr/SRC2/_image/05.jpg"></div>
+
+                    <div class="slider-direction slider-direction-next"></div>
+                    <div class="slider-direction slider-direction-prev"></div>
+
+                    <div class="slider-dots">
+                      <ul>
+
+                      </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end build-->
+
+        </div>
+
+		<!-- jQuery -->
+		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <!-- Client JavaScript -->
+        <script src="assets/js/jquery.reslider.js"></script>
+
+        <script>
+            $(function(){
+                $('.jquery-reslider').reSlider({
+                    speed:1000,  //페이드속도
+                    delay:5000,  //자동전환 속도
+                    imgCount:4,  //이미지갯수
+                    dots:true,   //하단 페이지 버튼
+                    autoPlay:true//자동재생
+                })
+            })
+        </script>
+
+	</body>
+</html>
